@@ -18,19 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class GraphQLLocalController extends AbstractController {
 	
 	private static final Logger log = LoggerFactory.getLogger(GraphQLLocalController.class);
-	
-//	private static final LinkRepository linkRepository;
-//    private static final UserRepository userRepository;
-//    private static final VoteRepository voteRepository;
-//
-//    static {//mongodb://graphql_db:graphql_db123@ds341825.mlab.com:41825/heroku_wd169ln1
-////        MongoDatabase mongo = new MongoClient(new MongoClientURI("mongodb://graphql_db:graphql_db123@ds341825.mlab.com:41825")).getDatabase("heroku_wd169ln1");
-//        MongoDatabase mongo = new MongoClient().getDatabase("hackernews");
-//        linkRepository = new LinkRepository(mongo.getCollection("links"));
-//        userRepository = new UserRepository(mongo.getCollection("users"));
-//        voteRepository = new VoteRepository(mongo.getCollection("votes"));
-//    }
-    
+ 
 
 	@RequestMapping(value = "/graphql", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
